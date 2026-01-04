@@ -1,0 +1,215 @@
+/* Base */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  background-color: #bed9fc;
+  color: #2e2e2e;
+  font-weight: 400;
+}
+
+/* Bandeau du titre */
+header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 80px 40px 80px 40px; /* top, right, bottom, left */
+  position: relative;
+}
+
+h1 {
+  font-family: "Inter Tight", serif;
+  font-weight: 1000;
+  font-size: 70px;
+  color: #203e69;
+  line-height: 1.2;
+  max-width: 90%;
+}
+
+/* Conteneur principal en grille */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colonnes égales */
+  gap: 2.5rem;
+}
+
+/* Bulle principale */
+.bubble-main {
+  grid-column: span 2; /* occupe les 2 colonnes */
+  background-color: #8ebfff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.09);
+  text-align: justify;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Bulles secondaires */
+.bubble-sub {
+  display: flex;
+  flex-direction: column;
+  background-color: #8ebfff;
+  padding: 1.8rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.09);
+  text-align: justify;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Titres */
+.bubble h2 {
+  color: #203e69;
+  margin-top: 0;
+  font-family: "Inter Tight", serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* Images */
+.bubble-image {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 1rem auto; /* espace au-dessus et en-dessous + centrage */
+}
+
+/* Boutons */
+.btn-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  align-self: flex-end;
+  margin-left: auto;
+  padding: 0.6rem 1.4rem;
+  background-color: #203e69;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-size: 0.9em;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.2s;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn-more:hover {
+  background-color: #203e69;
+}
+
+.arrow {
+  transition: transform 0.2s ease;
+  color: #c79a3b;
+}
+
+.btn-more:hover .arrow {
+  transform: translateX(4px);
+  color: #e2b85c;
+}
+
+/* Burger menu */
+.burger-menu {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  background-color: #203e69;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 60px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  user-select: none;
+  transition: background-color 0.2s;
+  margin-left: auto; /* pousse le burger à droite */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  border: 2px solid #fff;
+}
+
+.burger-menu:hover {
+  background-color: #fff;
+  color: #203e69;
+  border: 2px solid #203e69;
+}
+
+/* Menu déroulant caché par défaut */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* sous le burger */
+  right: 0;
+  background-color: #203e69;
+  border-radius: 12px;
+  padding: 0.5rem 0;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  min-width: 180px;
+}
+
+/* Affichage au hover */
+.burger-menu:hover .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Liens dans le menu */
+.dropdown-menu a {
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  color: white;
+  font-size: 0.95rem;
+  transition: background-color 0.2s;
+}
+
+.dropdown-menu a:hover {
+  background-color: #8ebfff;
+}
+
+/* Lang switch*/
+.lang-switch {
+  position: fixed;
+  top: 1.5rem;
+  right: 6.5rem;
+  display: flex;
+  gap: 0.3rem;
+}
+
+.lang-switch button {
+  background: white;
+  border: 2px solid #203e69;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #203e69;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.lang-switch button.active {
+  background: #203e69;
+  color: white;
+  border: 2px solid white;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
