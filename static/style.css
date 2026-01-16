@@ -4,7 +4,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 20px;
   line-height: 1.6;
-  background-color: #bed9fc;
+  background-color: #dae9fd;
   color: #2e2e2e;
   font-weight: 400;
 }
@@ -14,8 +14,11 @@ header {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin: 80px 40px 80px 40px; /* top, right, bottom, left */
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(to bottom, #dae9fd 70%, rgba(255, 255, 255, 0));
+  padding: 40px 0 80px 0;
 }
 
 h1 {
@@ -40,7 +43,7 @@ main {
 /* Bulle principale */
 .bubble-main {
   grid-column: span 2; /* occupe les 2 colonnes */
-  background-color: #8ebfff;
+  background-color: #bed9fc;
   padding: 2.5rem;
   border-radius: 20px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.09);
@@ -52,7 +55,7 @@ main {
 .bubble-sub {
   display: flex;
   flex-direction: column;
-  background-color: #8ebfff;
+  background-color: #bed9fc;
   padding: 1.8rem;
   border-radius: 20px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.09);
@@ -77,6 +80,18 @@ main {
   max-width: 600px;
   height: auto;
   margin: 1rem auto; /* espace au-dessus et en-dessous + centrage */
+}
+
+/*Table*/
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: center;
 }
 
 /* Boutons */
@@ -171,7 +186,7 @@ main {
 }
 
 .dropdown-menu a:hover {
-  background-color: #8ebfff;
+  background-color: #bed9fc;
 }
 
 /* Lang switch*/
