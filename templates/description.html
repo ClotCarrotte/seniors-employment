@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salariés seniors</title>
+    <link rel="stylesheet" href="../static/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../static/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+    />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <h1>
+        <span data-lang="fr">Les salariés au voisinage de la retraite</span>
+        <span data-lang="en" hidden>Employees approaching retirement</span>
+      </h1>
+
+      <!-- Language switch -->
+      <div class="lang-switch">
+        <button data-lang="fr" class="active">FR</button>
+        <button data-lang="en">EN</button>
+      </div>
+
+      <!-- Burger menu -->
+      <div class="burger-menu">
+        ☰
+        <nav class="dropdown-menu">
+          <a href="homepage.html">
+            <span data-lang="fr">Accueil</span>
+            <span data-lang="en" hidden>Home</span>
+          </a>
+          <a href="reforme.html">
+            <span data-lang="fr">La réforme</span>
+            <span data-lang="en" hidden>Pension reform</span>
+          </a>
+          <a href="contrats.html">
+            <span data-lang="fr">Les fins de CDI</span>
+            <span data-lang="en" hidden>End of permanent contracts</span>
+          </a>
+          <a href="description.html">
+            <span data-lang="fr">Les salariés seniors</span>
+            <span data-lang="en" hidden>Senior employees</span>
+          </a>
+          <a href="modelisation.html">
+            <span data-lang="fr">Analyse économétrique</span>
+            <span data-lang="en" hidden>Econometric analysis</span>
+          </a>
+          <a href="apropos.html">
+            <span data-lang="fr">À propos</span>
+            <span data-lang="en" hidden>About</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="bubble">
+        <h2>
+          <span data-lang="fr">Origine des données</span>
+          <span data-lang="en" hidden>Data sources</span>
+        </h2>
+        <p>
+          <span data-lang="fr">
+            Cette section vise à décrire les salariés au voisinage de la
+            retraite pour comprendre leurs spécificités en matière d’emploi.
+          </span>
+          <span data-lang="en" hidden>
+            This section aims to describe employees nearing retirement in order
+            to understand their specific employment characteristics.
+          </span>
+        </p>
+        <p>
+          <span data-lang="fr">
+            L’analyse s’appuie sur des données administratives issues des
+            déclarations sociales nominatives (DSN), générées automatiquement
+            chaque mois par le biais des logiciels de paie utilisés par les
+            employeurs. La base de données recense de façon exhaustive
+            l’ensemble des contrats en France depuis 2021 (hors travailleurs
+            indépendants et salariés de particuliers). Elle contient des
+            informations sur les contrats en eux-mêmes, mais aussi sur les
+            salariés, les entreprises et les lieux de travail.
+          </span>
+          <span data-lang="en" hidden>
+            The analysis is based on administrative data from the nominative
+            social declarations (DSN), automatically generated each month by the
+            payroll software used by employers. The database comprehensively
+            lists all contracts in France since 2021 (excluding self-employed
+            workers and domestic employees). It contains information on the
+            contracts themselves, as well as on employees, companies, and
+            workplaces.
+          </span>
+        </p>
+
+        <p>
+          <span data-lang="fr">
+            Pour rendre ces données exploitables, la Dares a développé le
+            Système d’information sur les mouvements de main d’œuvre (Sismmo) :
+            il recrée le parcours des salariés en compilant toutes les
+            informations concernant chacun d’entre eux.
+          </span>
+          <span data-lang="en" hidden>
+            To make this data usable, Dares developed the Workforce Movement
+            Information System (Sismmo): it recreates the career path of
+            employees by compiling all the information concerning each of them.
+          </span>
+        </p>
+
+        <a
+          href="https://dares.travail-emploi.gouv.fr/enquete-source/la-declaration-sociale-nominative"
+          class="link"
+        >
+          <span data-lang="fr"
+            >Articulation entre assurances chômage et retraites - Unédic,
+            2023</span
+          >
+          <span data-lang="en" hidden
+            >The relationship between unemployment insurance and pensions -
+            Unédic, 2023</span
+          >
+          <span class="arrow">→</span>
+        </a>
+      </section>
+
+      <section class="bubble">
+        <h2>
+          <span data-lang="fr"
+            >Les salariés âgés de 53 à 62 ans en fin de CDI</span
+          >
+          <span data-lang="en" hidden
+            >Employees between 53 nd 62 at end of permanent contract</span
+          >
+        </h2>
+        <p>
+          <span data-lang="fr">
+            L’extraction réalisée sur cette base comporte 2 218 001 CDI achevés
+            entre le 1<sup>er</sup> Sept 2021 et le 31 août 2025, concernant des
+            personnes âgées entre 53 et 62 ans à la fin de leur contrat. Les
+            statistiques suivantes décrivent donc des fins de contrats et non
+            des salariés en contrat.
+          </span>
+          <span data-lang="en" hidden>
+            The data extracted from this database includes 2,218,001 permanent
+            employment contracts (CDI) that ended between September 1, 2021, and
+            August 31, 2025, concerning individuals aged between 53 and 62 at
+            the end of their contracts. The following statistics therefore
+            describe contract terminations and not employees under contract.
+          </span>
+        </p>
+      </section>
+
+      <section class="bubble">
+        <img src="../static/part_sexe_tr_age.png" class="bubble-image" />
+      </section>
+
+      <section class="bubble">
+        <img src="../static/distr_age.png" class="bubble-image" />
+      </section>
+
+      <section class="bubble">
+        <img src="../static/distr_pcs_tr_age.png" class="bubble-image" />
+      </section>
+
+      <section class="bubble">
+        <img src="../static/distr_secteur_tr_age.png" class="bubble-image" />
+      </section>
+
+      <section class="bubble">
+        <img src="../static/distr_motif_age.png" class="bubble-image" />
+
+        <p>
+          <span data-lang="fr">
+            <i>
+              Note : La catégorie « erreur de déclaration » regroupe les
+              disparitions anormales de contrats et des motifs réservés aux CDD
+              renseignés pour des fins de CDI.
+            </i>
+          </span>
+          <span data-lang="en" hidden>
+            <i>
+              Note: The “reporting error” category includes abnormal contract
+              disappearances and termination reasons reserved for fixed-term
+              contracts but recorded for permanent contracts.
+            </i>
+          </span>
+        </p>
+      </section>
+
+      <section class="bubble">
+        <img src="../static/taux_variation_reforme.png" class="bubble-image" />
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Clotilde Carrotte | clotilde.carrotte@psl.eu <br />
+        © 2026
+      </p>
+    </footer>
+
+    <!-- Language switch script -->
+    <script src="../static/lang.js"></script>
+  </body>
+</html>
